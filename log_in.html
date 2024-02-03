@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <style>
+        /* Εδώ μπορείς να προσθέσεις CSS αν χρειάζεται */
+    </style>
+</head>
+<body>
+    <div id="songsManagement" style="display: none;">
+        Songs Management (only when the admin logs in):
+        <ul>
+            <li>Add</li>
+            <li>Change</li>
+            <li>Management for the songs</li>
+        </ul>
+    </div>
+
+    <div id="linksManagement" style="display: none;">
+        Links Management (only when the admin logs in):
+        <ul>
+            <li>Add</li>
+            <li>Change</li>
+            <li>Management for the links</li>
+        </ul>
+    </div>
+
+    <form id="loginForm" onsubmit="return login()">
+        <h2>Log in</h2>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </p>
+        <p>
+            <input type="submit" value="Log in">
+        </p>
+    </form>
+
+    <script src="management.js"></script>
+</body>
+</html>
